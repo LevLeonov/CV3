@@ -1,0 +1,215 @@
+/* Заголовок всей страницы */
+.glav {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    color: rgb(230, 87, 87);
+    font-family: "Marck Script", cursive;
+    font-style: normal;
+    font-size: 100px;
+    z-index: 1000; 
+    mix-blend-mode: difference;
+    color: rgb(230, 87, 87); 
+}
+
+/* Фулл body */
+body {
+    padding-top: 90px;
+    /* background-color: #2fcfff25; */
+}
+
+/* Часть body без заголовка */
+.body { 
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 30px;
+    color:#9f0013;
+
+    font: 16px "Comfortaa", monospace, sans-serif;
+}
+    
+/* Имя */
+h1 { 
+    font-family: "Pangolin", monospace, sans-serif;
+    color: #B72E3E;
+    font-size: 125px;
+    margin: 0 0 20px 0;  /* делаем аккуратный отступ снизу */
+}
+
+/* Имя + фото */
+.info {
+    display: flex;
+    align-items: flex-start;  /* элементы выравниваются сверху */
+    gap: 20px;                /* расстояние между текстом и фото */
+    margin-top: 10px;
+    padding: 20px;
+    background-color: #9df0ff31;
+    border-radius: 20px;
+}
+
+    /* Блок с текстом (имя, место проживания, контакты) */
+.text-block {
+    flex: 1;                  /* текст занимает всё доступное пространство */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;             /* расстояние между строками */
+}        
+
+/* Фото */
+.avatar {
+    width: 300px;               /* фото занимает 40% ширины блока */
+    height: auto;             /* высота зависит от ширины */
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #476e75;
+    object-fit: cover;        /* сохраняем пропорции */
+}
+
+/* Место жительства */
+.gorod {
+    font-style: italic;
+}
+
+/* Заголовки */
+.name {
+    font-size:30px;
+    font-family: "Prosto One", monospace, sans-serif;;
+    color: #B72E3E;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Список */
+.list { 
+  list-style: none; /* Удалить маркеры по умолчанию */
+  padding: 0 20px;
+
+}
+
+.list li::before {
+  content: "\2022"; /* Добавляем content: \2022, он же символ точки (маркера) */
+  display: inline-block;
+  width: 1em;
+  color: rgb(255, 0, 0); /* меняем цвет */
+  font-weight: bold;
+  margin-left: -1em;
+}
+
+
+
+/* Ссылки */
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: blue;
+}
+
+a:visited {
+    color: gray;
+}
+
+.links {
+    list-style: none;
+    padding: 0px;
+}
+.links li {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+/* Блоки */
+.card {
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+
+/* Цвета блоков */
+/* .bg-1 {
+    background: #00ff009d;
+}
+
+.bg-2 {
+    background: #fffd7141;
+}
+
+.bg-3 {
+    background: #ff30ba27;
+} */
+
+/* Таблица с опытом работы */
+.work {
+    width: 100%;
+}
+.work td:nth-child(2),
+.work td:nth-child(3) { 
+    color: rgba(78, 102, 83, 0.829)
+}
+.work tr:nth-child(1) {
+    background: rgba(209, 76, 76, 0.24);
+}
+
+/* Связь со мной */
+.contact {
+    text-align: right;
+    
+
+}
+
+.form label {
+    display: block;
+    font-size: 14px;
+    color: rgb(10, 107, 1);
+    font-size: bold;
+}
+
+.form input, 
+.form textarea{
+    width:30%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+    color: black;
+    padding:15px 0px 10px;
+    outline: none;
+    font-family: inherit;
+}
+
+.btn {
+    color:#9f0013;
+    font: 16px "Comfortaa", monospace, sans-serif;
+    padding: 20px 15px;
+    background-color: #f6f3fc;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* Position */
+/* .position {
+    position:relative;
+    border: 4px solid black;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.box {
+    position: fixed;
+    top:50px;
+    left:100px;
+    bottom:500px;
+    width: 50px;
+    height: 50px;
+    background: lightcoral;
+} */
+

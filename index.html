@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lev CV</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Marck+Script&family=Pangolin&family=Prosto+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="glav">Резюме</div>
+    <div class="body">
+      <div class="info">
+        <div class="text-block">
+          <h1>Страхов Лев Романович</h1>
+
+          <div class="card">
+            <p class="name">Место проживания</p>
+            <ul>
+              <li>
+                <p class="gorod">г.Москва (готов к гибридному формату)</p>
+              </li>
+            </ul>
+          </div>
+
+          <br />
+
+          <div class="card">
+            <p class="name">Контактные данные</p>
+
+            <ul class="list">
+              <li>
+                <strong>Номер телефона:</strong> <em>+7 (900) 228-07-15</em>
+              </li>
+              <li>
+                <strong>Telegram:</strong>
+                <a href="https://t.me/levleonov2703" target="_blanc"
+                  ><em>@levleonov2703</em></a
+                >
+              </li>
+              <li>
+                <strong>Электронная почта:</strong> <em>pooshkeyl@gmail.com</em>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <img src="Photo.jpg" alt="photo" class="avatar" />
+      </div>
+
+      <br />
+
+      <div class="card">
+        <p class="name">Опыт работы</p>
+        <table border="0" class="work">
+          <tr>
+            <td><strong>Компания</strong></td>
+            <td><strong>Должность</strong></td>
+            <td><strong>Время работы</strong></td>
+          </tr>
+          <tr>
+            <td>ООО "Каро Фильм Менеджмент"</td>
+            <td>Администратор-кассир</td>
+            <td>Март 2025-Май 2025</td>
+          </tr>
+          <tr>
+            <td>ООО "КОЛИЗЕУМ"</td>
+            <td>Администратор</td>
+            <td>Октябрь 2024-Данный момент</td>
+          </tr>
+          <tr>
+            <td>ООО «МЕТОД МЕДИА»</td>
+            <td>Помощник специалиста в отделе рекламы</td>
+            <td>Июнь 2025-Август 2025</td>
+          </tr>
+        </table>
+      </div>
+      <div class="card">
+        <p class="name">Изучал Frontend по данным видео-курсам</p>
+        <ul class="links">
+          <li>
+            <a
+              href="https://www.youtube.com/watch?v=SpCUuyZZTp8"
+              target="_blank"
+              >CSS для Начинающих - Практический Курс</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/watch?v=DOEtVdkKwcU&t=4579s "
+              target="_blank"
+              >Начни учить HTML с этого курса</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="card contact">
+        <p class="name">Связь со мной</p>
+        <form action="/">
+          <div class="row">
+            <div class="form">
+              <input type="email" id="name" placeholder="Введите ваше имя" />
+            </div>
+
+            <div class="form">
+              <label for="name"> Ваше имя </label>
+              <input type="email" id="email" placeholder="Введите email..." />
+            </div>
+
+            <div class="form">
+              <label for="email"> Ваш Email </label>
+              <br />
+              <label for="text"> Ваше сообщение: </label>
+              <div class="sms">
+                <textarea id="text" rows="2" cols="10"></textarea>
+              </div>
+            </div>
+            <input class="btn" type="submit" value="Отправить!" />
+          </div>
+        </form>
+        <div class="position">
+          <div class="box"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
